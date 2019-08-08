@@ -4,8 +4,8 @@ dist: trusty
 language: c
 matrix:
   include:
-  - language: node_js
   - os: windows
+    - language: node_js
     env: CC=clang CXX=clang++ npm_config_clang=1
     compiler: clang
 addons:
