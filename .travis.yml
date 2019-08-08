@@ -5,11 +5,6 @@ language: c
 matrix:
   include:
   - os: windows
-    - language: node_js
-    node_js:
-        - "lts/*"
-        - "lts/boron"
-        
     env: CC=clang CXX=clang++ npm_config_clang=1
     compiler: clang
 addons:
